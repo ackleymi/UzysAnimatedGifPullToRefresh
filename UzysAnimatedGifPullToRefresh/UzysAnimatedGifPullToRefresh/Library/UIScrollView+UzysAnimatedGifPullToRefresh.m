@@ -27,7 +27,7 @@ static char UIScrollViewPullToRefreshView;
         view.scrollView = self;
         view.frame = CGRectMake((self.bounds.size.width - view.bounds.size.width)/2,
                                 -view.bounds.size.height, view.bounds.size.width, view.bounds.size.height);
-        view.originalTopInset = self.contentInset.top;
+        view.originalTopInset = self.contentInset.top+64;
         [self addSubview:view];
         [self sendSubviewToBack:view];
         self.pullToRefreshView = view;
