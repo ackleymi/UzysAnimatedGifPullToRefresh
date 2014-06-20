@@ -36,7 +36,7 @@
     }
     UIImage *image1 = progressImg.firstObject;
 //    NSLog(@"image1 size %@ scale %f",NSStringFromCGSize(image1.size),image1.scale);
-    self = [super initWithFrame:CGRectMake(0, (-image1.size.height)4, (image1.size.width)4, (image1.size.height)4)];
+    self = [super initWithFrame:CGRectMake(0, (-image1.size.height)/4, (image1.size.width)/4, (image1.size.height)/4)];
     if(self) {
         self.pImgArrProgress = progressImg;
         self.pImgArrLoading = loadingImages;
