@@ -19,6 +19,7 @@ typedef NS_ENUM(NSUInteger, UZYSPullToRefreshState) {
 };
 
 @interface UzysAnimatedGifActivityIndicator : UIView
+
 @property (nonatomic,assign) BOOL isObserving;
 @property (nonatomic,assign) CGFloat originalTopInset;
 @property (nonatomic,assign) UZYSPullToRefreshState state;
